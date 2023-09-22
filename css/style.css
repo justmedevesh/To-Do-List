@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=Ubuntu:wght@500&display=swap');
+*{
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(28, 34, 37);
+}
+.box{
+    position: relative;
+    width: 450px;
+    height: 550px;
+    padding: 30px 50px;
+    border-radius: 30px;
+    background: #2f363e;
+    box-shadow: 25px 25px 75px;
+}
+h2{
+    width: 100%;
+    text-align: center;
+    font-size: 1.75em;
+    color: #ffff;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+#textbx{
+    position: relative;
+    width: 100%;
+    border: none;
+    outline:none;
+    padding: 15px 20px;
+    border-radius: 30px;
+    font-size: 1em;
+    box-shadow: 5px 5px 7px;
+}
+.box li{
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: #1f83f2;
+    margin: 15px 0;
+    padding: 10px 10px 10px 45px;
+    min-height: 45px;
+    cursor: pointer;
+    border-radius: 22.5px;
+    color: #ffff;
+    box-shadow: 5px 5px 7px;
+    /* justify-content: space-between; */
+}
+.box li.done{
+    background: #607d8b;
+}
+.box li.done:after{
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 6px;
+    left: 16px;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transform: rotate(315deg);
+}
+.box li i{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f00;
+    right: -40px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 7px;
+}
+.box li i::before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    background:#fff;
+    transform: rotate(45deg);
+}
+.box li i::after{
+    content:'';
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    background:#fff;
+    transform: rotate(-45deg);
+}
+.box li::before{
+    content: '';
+    position: absolute;
+    left: 8px;
+    width: 30px;
+    height: 30px;
+    background: #2f363e;
+    border-radius: 50%;
+
+}
+#list{
+    position: relative;
+    margin-top: 20px;
+    height: 350px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
